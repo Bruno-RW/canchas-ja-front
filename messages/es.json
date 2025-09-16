@@ -1,0 +1,72 @@
+{
+    "NotFound": {
+        "Title": "Página no encontrada",
+        "Button": "Volver al inicio"
+    },
+
+    "Toast": {
+        "SendError": "Error al enviar el formulario",
+        "RequestError": "Error de solicitud",
+        "InternalError": "Error interno"
+    },
+    
+    "Navbar": {
+        
+    },
+
+    "Footer": {
+
+    },
+
+    "LoginPage": {
+        "Title": "Iniciar sesión"
+    },
+    "LoginForm": {
+        "Login": "Iniciar sesión",
+        "LoggingIn": "Iniciando sesión...",
+        "Email": "Correo electrónico",
+        "Password": "Contraseña"
+    },
+    "LoginFormSchema": {
+        "emailRequired": "El correo electrónico es obligatorio",
+        "emailMin": "El correo electrónico debe tener al menos 10 caracteres",
+        "emailMax": "El correo electrónico debe tener menos de 70 caracteres",
+        "emailInvalid": "Correo electrónico inválido",
+
+        "passwordRequired": "La contraseña es obligatoria",
+        "passwordMin": "La contraseña debe tener al menos 8 caracteres",
+        "passwordMax": "La contraseña debe tener menos de 30 caracteres"
+    },
+
+    "SigninPage": {
+        "Title": "Crear cuenta"
+    },
+    "SigninForm": {
+        "Signin": "Crear",
+        "SigningIn": "Creando...",
+
+        "Name": "Nombre completo",
+        "Email": "Correo electrónico",
+        "Password": "Contraseña",
+        "ConfirmPassword": "Confirmar contraseña"
+    },
+    "SigninFormSchema": {
+        "nameRequired": "El nombre es obligatorio",
+        "nameMax": "El nombre debe tener menos de 70 caracteres",
+
+        "emailRequired": "El correo electrónico es obligatorio",
+        "emailMin": "El correo electrónico debe tener al menos 10 caracteres",
+        "emailMax": "El correo electrónico debe tener menos de 70 caracteres",
+        "emailInvalid": "Correo electrónico inválido",
+
+        "passwordRequired": "La contraseña es obligatoria",
+        "passwordMin": "La contraseña debe tener al menos 8 caracteres",
+        "passwordMax": "La contraseña debe tener menos de 30 caracteres",
+        
+        "confirmPasswordRequired": "La contraseña es obligatoria",
+        "confirmPasswordMin": "La contraseña debe tener al menos 8 caracteres",
+        "confirmPasswordMax": "La contraseña debe tener menos de 30 caracteres",
+
+        "passwordMatch": "Las contraseñas no coinciden"
+    }
+}

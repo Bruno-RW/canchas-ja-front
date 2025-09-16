@@ -1,0 +1,73 @@
+{
+    "NotFound": {
+        "Title": "Page not found",
+        "Button": "Return to home"
+    },
+
+    "Toast": {
+        "SendError": "Error sending form",
+        "RequestError": "Request error",
+        "InternalError": "Internal error"
+    },
+    
+    "Navbar": {
+        
+    },
+
+    "Footer": {
+
+    },
+
+    "LoginPage": {
+        "Title": "Login"
+    },
+    "LoginForm": {
+        "Login": "Login",
+        "LoggingIn": "Logging in...",
+        "Email": "E-mail",
+        "Password": "Password"
+    },
+    "LoginFormSchema": {
+        "emailRequired": "E-mail is required",
+        "emailMin": "E-mail must be at least 10 characters",
+        "emailMax": "E-mail must be less than 70 characters",
+        "emailInvalid": "Invalid e-mail",
+
+        "passwordRequired": "Password is required",
+        "passwordMin": "Password must be at least 8 characters",
+        "passwordMax": "Password must be less than 30 characters"
+    },
+
+    "SigninPage": {
+        "Title": "Create account"
+    },
+    "SigninForm": {
+        "Signin": "Create",
+        "SigningIn": "Creating...",
+
+        "Name": "Full name",
+        "Email": "E-mail",
+        "Password": "Password",
+        "ConfirmPassword": "Confirm password"
+    },
+    "SigninFormSchema": {
+        "nameRequired": "Nam is required",
+        "nameMax": "Name must be less than 70 characters",
+
+        "emailRequired": "E-mail is required",
+        "emailMin": "E-mail must be at least 10 characters",
+        "emailMax": "E-mail must be less than 70 characters",
+        "emailInvalid": "Invalid e-mail",
+
+        "passwordRequired": "Password is required",
+        "passwordMin": "Password must be at least 8 characters",
+        "passwordMax": "Password must be less than 30 characters",
+        
+        "confirmPasswordRequired": "Password is required",
+        "confirmPasswordMin": "Password must be at least 8 characters",
+        "confirmPasswordMax": "Password must be less than 30 characters",
+
+        "passwordMatch": "Passwords doesn't match"
+    }
+   
+}

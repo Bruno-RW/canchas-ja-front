@@ -1,0 +1,72 @@
+{
+    "NotFound": {
+        "Title": "Página não encontrada",
+        "Button": "Voltar ao início"
+    },
+
+    "Toast": {
+        "SendError": "Erro ao enviar formulário",
+        "RequestError": "Erro de requisição",
+        "InternalError": "Erro interno"
+    },
+
+    "Navbar": {
+        
+    },
+    
+    "Footer": {
+
+    },
+
+    "LoginPage": {
+        "Title": "Entrar"
+    },
+    "LoginForm": {
+        "Login": "Entrar",
+        "LoggingIn": "Entrando...",
+        "Email": "E-mail",
+        "Password": "Senha"
+    },
+    "LoginFormSchema": {
+        "emailRequired": "E-mail é necessário",
+        "emailMin": "E-mail deve ter pelo menos 10 caracteres",
+        "emailMax": "E-mail deve ter menos que 70 caracteres",
+        "emailInvalid": "E-mail inválido",
+
+        "passwordRequired": "Senha é necessária",
+        "passwordMin": "Senha deve ter pelo menos 8 caracteres",
+        "passwordMax": "Senha deve ter menos que 30 caracteres"
+    },
+
+    "SigninPage": {
+        "Title": "Criar conta"
+    },
+    "SigninForm": {
+        "Signin": "Criar",
+        "SigningIn": "Criando...",
+
+        "Name": "Nome completo",
+        "Email": "E-mail",
+        "Password": "Senha",
+        "ConfirmPassword": "Confirmar senha"
+    },
+    "SigninFormSchema": {
+        "nameRequired": "Nome é necessário",
+        "nameMax": "Nome deve ter menos que 70 caracteres",
+
+        "emailRequired": "E-mail é necessário",
+        "emailMin": "E-mail deve ter pelo menos 10 caracteres",
+        "emailMax": "E-mail deve ter menos que 70 caracteres",
+        "emailInvalid": "E-mail inválido",
+
+        "passwordRequired": "Senha é necessária",
+        "passwordMin": "Senha deve ter pelo menos 8 caracteres",
+        "passwordMax": "Senha deve ter menos que 30 caracteres",
+        
+        "confirmPasswordRequired": "Senha é necessária",
+        "confirmPasswordMin": "Senha deve ter pelo menos 8 caracteres",
+        "confirmPasswordMax": "Senha deve ter menos que 30 caracteres",
+
+        "passwordMatch": "Senhas não correspondem"
+    }
+}
