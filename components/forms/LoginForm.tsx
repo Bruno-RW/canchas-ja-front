@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { useSession } from "@/context/SessionContext";
+import useSession from "@/hooks/useSession";
 import useToastStyle from "@/hooks/useToastStyle";
 import { cn, getInitials } from "@/lib/utils";
 import { LOGIN_API_URL } from "@/lib/routes/backend";

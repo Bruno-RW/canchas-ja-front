@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "@/context/ThemeContext";
+import useTheme from "@/hooks/useTheme";
 
 const useToastStyle = () => {
   const { theme } = useTheme();

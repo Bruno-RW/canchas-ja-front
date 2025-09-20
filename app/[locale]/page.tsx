@@ -8,7 +8,7 @@ import "@/app/globals.css";
 
 import { cn } from "@/lib/utils";
 import { baseFont } from "@/lib/fonts";
-import GeneralProvider from "@/providers/GeneralProvider";
+import GeneralProvider from "@/providers/ContextProvider";
 
 export const metadata: Metadata = {
   title: "Canchas Já",
