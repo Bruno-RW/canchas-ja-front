@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-import { useSession } from "@/context/SessionContext";
+import useSession from "@/hooks/useSession";
 
 import { userMock } from "@/lib/mock/user"; //! MOCKUP DATA
 
@@ -18,9 +18,9 @@ const HomePage = () => {
   }, [user.isLogin]);
 
   return (
-    <section>
+    <>
       Uva
-    </section>
+    </>
   );
 };
 

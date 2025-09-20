@@ -1,9 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@import "tailwindcss";
-@import "tw-animate-css";
-
 /*? === === === BASE STYLES === === === ?*/
 :root, html, body {
   @apply w-full h-full scroll-smooth;
