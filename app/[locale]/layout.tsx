@@ -8,11 +8,11 @@ import "@/app/globals.css";
 
 import { cn } from "@/lib/utils";
 import { baseFont } from "@/lib/fonts";
-import GeneralProvider from "@/providers/GeneralProvider";
+import ContextProvider from "@/providers/ContextProvider";
 
 export const metadata: Metadata = {
   title: "Canchas Já",
-  description: "Chat bot para hospitais utilizando dados personalizados",
+  description: "Hospede ou aluge suas canchas de bocha.",
 };
 
 const RootLayout = async ({
@@ -34,9 +34,9 @@ const RootLayout = async ({
         )}
       >
         <NextIntlClientProvider>
-          <GeneralProvider>
+          <ContextProvider>
             {children}
-          </GeneralProvider>
+          </ContextProvider>
         </NextIntlClientProvider>
       </body>
     </html>
