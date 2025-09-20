@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { useSession } from "@/context/SessionContext";
+import useSession from "@/hooks/useSession";
 
 import LoginForm from "@/components/forms/LoginForm";
 
