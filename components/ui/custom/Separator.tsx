@@ -6,7 +6,7 @@ const Separator: React.FC<SeparatorProps> = ({ className }) => {
   return (
     <hr 
       className={cn(
-        "w-full mb-3 border-black/10 dark:border-white/10", 
+        "w-full border-black/10 dark:border-white/10", 
         className
       )} 
     />
