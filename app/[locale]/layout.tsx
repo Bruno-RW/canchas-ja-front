@@ -6,8 +6,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 
-import { cn } from "@/lib/utils";
-import { baseFont } from "@/lib/fonts";
+import { cn } from "@/lib/utils/utils";
+import { baseFont } from "@/lib/fonts/fonts";
 import ContextProvider from "@/providers/ContextProvider";
 
 export const metadata: Metadata = {

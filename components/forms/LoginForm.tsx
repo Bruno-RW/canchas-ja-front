@@ -11,7 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import useSession from "@/hooks/useSession";
 import useToastStyle from "@/hooks/useToastStyle";
-import { cn, getInitials } from "@/lib/utils";
+import { cn, getInitials } from "@/lib/utils/utils";
 import { LOGIN_API_URL } from "@/lib/routes/backend";
 import { loginFormData } from "@/lib/types/forms";
 import { getLoginFormSchema } from "@/lib/schemas/auth";

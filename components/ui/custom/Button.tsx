@@ -2,7 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import React, { forwardRef } from "react";
 import Link from "next/link";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils/utils";
 
 const buttonStyles = cva(
   "items-center h-10 p-2 rounded-lg transition-transform-opacity active:scale-95 hover:cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4",
