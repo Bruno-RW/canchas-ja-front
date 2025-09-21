@@ -15,7 +15,53 @@
     },
     
     "Footer": {
+        "Columns": {
+            "Support": {
+                "Title": "Suporte",
 
+                "Help": "Centro de ajudas",
+                "Security": "Informações de segurança",
+                "Cancel": "Opções de cancelamento",
+                "Accessibility": "Acessibilidade para necessitados",
+                "Report": "Reportar preocupações"
+            },
+            "Community": {
+                "Title": "Comunidade",
+
+                "Community1": "Bairro colato",
+                "Community2": "Vila Kennedy",
+                "Community3": "Recanto verde",
+                "Community4": "Lajeado seco",
+                "Others": "Outras comunidades relevantes"
+            },
+            "Hosting": {
+                "Title": "Hospedagem",
+
+                "Announce": "Anuncie seu espaço",
+                "Protection": "Proteção para anfitriões",
+                "Resources": "Explorar recursos de hospedagem",
+                "Secutiry": "Como anunciar de forma segura"
+            },
+            "About": {
+                "Title": "Sobre",
+                
+                "AboutUs": "Sobre nós",
+                "News": "Notícias",
+                "Functionality": "Funcionalidades",
+                "Careers": "Carreiras",
+                "Investors": "Investidores"
+            }
+        },
+        
+        "Kicker": {
+            "Copyright": "© 2025 Canchas Já.",
+            "Privacy": "Privacidade",
+            "Terms": "Termos",
+            "Contact": "Contato",
+
+            "Language": "Português (BR)",
+            "Currency": "BRL"
+        }
     },
 
     "LoginPage": {

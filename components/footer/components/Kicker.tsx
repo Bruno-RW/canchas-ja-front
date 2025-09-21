@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { FaFacebook, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { Dot } from "lucide-react";
@@ -8,25 +11,27 @@ import LanguageSVG from "@/public/icons/action/language.svg";
 import MoneySVG from "@/public/icons/editor/attach_money.svg";
 
 const Kicker = () => {
+  const t = useTranslations("Footer.Kicker");
+
   return (
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-y-4 md:gap-y-0 text-brand-text-secondary">
       {/* Left side - Copyright and links */}
       <div className="flex flex-wrap items-center justify-center gap-x-1 text-sm">
-        <span>© 2025 Canchas Já.</span>
+        <span>{t("Copyright")}</span>
         <Dot className="w-3" />
 
         <a href="#" className="hover:text-brand-primary hover:underline">
-          Privacidade
+          {t("Privacy")}
         </a>
         <Dot className="w-3" />
 
         <a href="#" className="hover:text-brand-primary hover:underline">
-          Termos
+          {t("Terms")}
         </a>
         <Dot className="w-3" />
 
         <a href="#" className="hover:text-brand-primary hover:underline">
-          Contato
+          {t("Contact")}
         </a>
       </div>
 
@@ -35,12 +40,12 @@ const Kicker = () => {
         <div className="flex items-center gap-x-2 text-sm">
           <Link href="#" className="flex items-center gap-x-1 hover:text-brand-primary">
             <Image src={LanguageSVG} alt="Language icon" width={22} />
-            <span className="font-medium underline">Português (BR)</span>
+            <span className="font-medium underline underline-offset-[3px]">{t("Language")}</span>
           </Link>
 
           <Link href="#" className="flex items-center hover:text-brand-primary">
             <Image src={MoneySVG} alt="Language icon" width={22} />
-            <span className="font-medium underline">BRL</span>
+            <span className="font-medium underline underline-offset-[3px]">{t("Currency")}</span>
           </Link>
         </div>
 

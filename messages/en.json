@@ -15,7 +15,53 @@
     },
 
     "Footer": {
+        "Columns": {
+            "Support": {
+                "Title": "Support",
 
+                "Help": "Help center",
+                "Security": "Safety information",
+                "Cancel": "Cancellation options",
+                "Accessibility": "Accessibility",
+                "Report": "Report a concern"
+            },
+            "Community": {
+                "Title": "Community",
+
+                "Community1": "Bairro Colato",
+                "Community2": "Vila Kennedy",
+                "Community3": "Recanto Verde",
+                "Community4": "Lajeado Seco",
+                "Others": "Other relevant communities"
+            },
+            "Hosting": {
+                "Title": "Hosting",
+
+                "Announce": "List your space",
+                "Protection": "Host protection",
+                "Resources": "Explore hosting resources",
+                "Security": "How to host safely"
+            },
+            "About": {
+                "Title": "About",
+
+                "AboutUs": "About us",
+                "News": "News",
+                "Functionality": "Features",
+                "Careers": "Careers",
+                "Investors": "Investors"
+            }
+        },
+        
+        "Kicker": {
+            "Copyright": "© 2025 Canchas Já.",
+            "Privacy": "Privacy",
+            "Terms": "Terms",
+            "Contact": "Contact",
+
+            "Language": "English (EN)",
+            "Currency": "USD"
+        }
     },
 
     "LoginPage": {
