@@ -6,7 +6,11 @@
   @apply w-full h-full scroll-smooth;
 }
 
-h1 {
+body {
+  @apply flex flex-col bg-brand-bg-primary dark:bg-brand-text-primary;
+}
+
+/* h1 {
   @apply text-5xl lg:text-6xl font-bold text-[#222] mb-4 break-all sm:break-normal dark:text-gray-50;
 }
 h2 {
@@ -14,7 +18,7 @@ h2 {
 }
 h3 {
   @apply text-xl font-semibold text-[#222] mb-2 break-all sm:break-normal dark:text-gray-50;
-}
+} */
 
 
 

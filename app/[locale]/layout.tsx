@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 
-import { cn } from "@/lib/utils/utils";
 import { baseFont } from "@/lib/fonts/fonts";
 import ContextProvider from "@/providers/ContextProvider";
 
@@ -27,12 +26,7 @@ const RootLayout = async ({
 
   return (
     <html lang={locale}>
-      <body suppressHydrationWarning={true}
-        className={cn(
-          baseFont.className,
-          "flex flex-col w-full bg-gray-50 dark:bg-neutral-900"
-        )}
-      >
+      <body suppressHydrationWarning={true} className={baseFont.className}>
         <NextIntlClientProvider>
           <ContextProvider>
             {children}

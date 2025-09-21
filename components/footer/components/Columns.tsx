@@ -3,7 +3,7 @@ const Columns = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {/* Suporte */}
       <div>
-        <h3 className="font-semibold text-gray-900 mb-4">Suporte</h3>
+        <h3 className="font-medium text-gray-900 mb-3">Suporte</h3>
         <ul className="space-y-3">
           <li>
             <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
@@ -35,7 +35,7 @@ const Columns = () => {
 
       {/* Comunidade */}
       <div>
-        <h3 className="font-semibold text-gray-900 mb-4">Comunidade</h3>
+        <h3 className="font-medium text-gray-900 mb-3">Comunidade</h3>
         <ul className="space-y-3">
           <li>
             <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
@@ -67,7 +67,7 @@ const Columns = () => {
 
       {/* Hospedagem */}
       <div>
-        <h3 className="font-semibold text-gray-900 mb-4">Hospedagem</h3>
+        <h3 className="font-medium text-gray-900 mb-3">Hospedagem</h3>
         <ul className="space-y-3">
           <li>
             <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
@@ -94,7 +94,7 @@ const Columns = () => {
 
       {/* Sobre */}
       <div>
-        <h3 className="font-semibold text-gray-900 mb-4">Sobre</h3>
+        <h3 className="font-medium text-gray-900 mb-3">Sobre</h3>
         <ul className="space-y-3">
           <li>
             <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
