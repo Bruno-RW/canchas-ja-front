@@ -4,31 +4,21 @@ const Columns = () => {
       {/* Suporte */}
       <div>
         <h3 className="font-medium text-gray-900 mb-3">Suporte</h3>
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-sm text-brand-text-secondary">
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Centro de ajudas
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Centro de ajudas</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Informações de segurança
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Informações de segurança</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Opções de cancelamento
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Opções de cancelamento</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Acessibilidade para necessitados
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Acessibilidade para necessitados</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Reportar preocupações
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Reportar preocupações</a>
           </li>
         </ul>
       </div>
@@ -36,31 +26,21 @@ const Columns = () => {
       {/* Comunidade */}
       <div>
         <h3 className="font-medium text-gray-900 mb-3">Comunidade</h3>
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-sm text-brand-text-secondary">
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Bairro colato
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Bairro colato</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Vila Kennedy
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Vila Kennedy</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Recanto verde
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Recanto verde</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Lajeado seco
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Lajeado seco</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Outras comunidades relevantes
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Outras comunidades relevantes</a>
           </li>
         </ul>
       </div>
@@ -68,26 +48,18 @@ const Columns = () => {
       {/* Hospedagem */}
       <div>
         <h3 className="font-medium text-gray-900 mb-3">Hospedagem</h3>
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-sm text-brand-text-secondary">
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Anuncie seu espaço
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Anuncie seu espaço</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Proteção para anfitriões
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Proteção para anfitriões</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Explorar recursos de hospedagem
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Explorar recursos de hospedagem</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Como anunciar de forma segura
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Como anunciar de forma segura</a>
           </li>
         </ul>
       </div>
@@ -95,31 +67,21 @@ const Columns = () => {
       {/* Sobre */}
       <div>
         <h3 className="font-medium text-gray-900 mb-3">Sobre</h3>
-        <ul className="space-y-3">
+        <ul className="space-y-3 text-sm text-brand-text-secondary">
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Sobre nós
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Sobre nós</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Notícias
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Notícias</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Funcionalidades
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Funcionalidades</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Carreiras
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Carreiras</a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm">
-              Investidores
-            </a>
+            <a href="#" className="hover:text-brand-primary hover:underline">Investidores</a>
           </li>
         </ul>
       </div>
