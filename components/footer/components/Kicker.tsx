@@ -31,7 +31,7 @@ const Kicker = () => {
       </div>
 
       {/* Right side - Language, currency and social */}
-      <div className="flex items-center gap-x-4">
+      <div className="flex items-center gap-x-16">
         <div className="flex items-center gap-x-2 text-sm">
           <button className="flex items-center gap-x-1 text-gray-600 hover:text-gray-900">
             {/* <LanguageSVG className="w-8" /> */}
@@ -46,7 +46,7 @@ const Kicker = () => {
           </button>
         </div>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center gap-x-4">
           <Link
             href="#"
             className="text-gray-600 hover:text-gray-900"
