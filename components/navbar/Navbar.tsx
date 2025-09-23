@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky flex top-0 z-50 w-full h-16 items-center justify-between px-6 md:px-10 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky flex top-0 z-50 w-full h-16 items-center justify-between px-6 md:px-10 border-b">
       <DesktopNavbar 
         user={userMock} 
         logout={logout}
