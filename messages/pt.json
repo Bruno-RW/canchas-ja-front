@@ -11,7 +11,30 @@
     },
 
     "Navbar": {
+        "SearchPlaceholder": "Buscar...",
+        "BecomeHost": "Torne-se um anfitrião",
+
+        "Others": "Outros",
+        "Profile": "Perfil",
+        "Settings": "Configurações",
+        "Plans": "Planos",
+        "HelpFeedback": "Ajuda & Feedback",
+
+        "Preferences": "Preferências",
+        "Theme": "Tema",
+        "ThemeSystem": "Sistema",
+        "ThemeLight": "Claro",
+        "ThemeDark": "Escuro",
         
+        "Language": "Idioma",
+        "LanguageEN": "Inglês",
+        "LanguageES": "Espanhol",
+        "LanguagePT": "Português",
+
+        "Logout": "Sair",
+
+        "Login": "Entrar",
+        "Signin": "Cadastrar"
     },
     
     "Footer": {
