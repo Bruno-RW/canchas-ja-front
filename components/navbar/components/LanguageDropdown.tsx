@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const NavbarLanguageDropdown = () => {
+const LanguageDropdown = () => {
   const t = useTranslations("Navbar");
 
   const router = useRouter();
@@ -75,4 +75,4 @@ const NavbarLanguageDropdown = () => {
   );
 };
 
-export default NavbarLanguageDropdown;
+export default LanguageDropdown;

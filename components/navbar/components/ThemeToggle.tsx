@@ -14,7 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-const NavbarThemeToggle = () => {
+const ThemeToggle = () => {
   const t = useTranslations("Navbar");
   const { theme, setTheme } = useTheme();
 
@@ -32,7 +32,8 @@ const NavbarThemeToggle = () => {
                 onClick={() => setTheme("system")}
                 className={cn(
                   "h-6 w-6 p-0 rounded-full hover:cursor-pointer",
-                  theme === "system" && "bg-background text-foreground shadow-sm"
+                  theme === "system" &&
+                    "bg-background text-foreground shadow-sm"
                 )}
               >
                 <Monitor className="h-3 w-3" />
@@ -78,7 +79,7 @@ const NavbarThemeToggle = () => {
                 <Moon className="h-3 w-3" />
               </Button>
             </TooltipTrigger>
-            
+
             <TooltipContent className="bg-background text-foreground shadow-sm">
               <p>{t("ThemeDark")}</p>
             </TooltipContent>
@@ -89,4 +90,4 @@ const NavbarThemeToggle = () => {
   );
 };
 
-export default NavbarThemeToggle;
+export default ThemeToggle;

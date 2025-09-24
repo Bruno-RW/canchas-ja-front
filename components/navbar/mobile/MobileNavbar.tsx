@@ -24,8 +24,8 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils/utils";
 import { User } from "@/lib/types/user";
 
-import NavbarThemeToggle from "@/components/navbar/components/NavbarThemeToggle";
-import NavbarLanguageDropdown from "@/components/navbar/components/NavbarLanguageDropdown";
+import ThemeToggle from "@/components/navbar/components/ThemeToggle";
+import LanguageDropdown from "@/components/navbar/components/LanguageDropdown";
 
 interface MobileNavbarProps {
   user: User;
@@ -135,8 +135,8 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user, logout, isOpen, setIs
                   <Sliders className="h-4 w-4 text-muted-foreground" />
                   <p className="text-xs font-medium text-muted-foreground">{t("Preferences")}</p>
                 </div>
-                <NavbarThemeToggle />
-                <NavbarLanguageDropdown />
+                <ThemeToggle />
+                <LanguageDropdown />
               </div>
             </div>
 
