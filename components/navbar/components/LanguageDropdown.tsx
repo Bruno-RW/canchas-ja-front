@@ -39,7 +39,7 @@ const LanguageDropdown = () => {
     <div className="flex items-center justify-between">
       <span className="text-sm font-medium">{t("Language")}</span>
 
-      <DropdownMenu>
+      <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
           <Button
             variant="ghost"
