@@ -137,6 +137,15 @@
         "confirmPasswordMax": "Password must be less than 30 characters",
 
         "passwordMatch": "Passwords doesn't match"
+    },
+
+    "UserPage": {
+        "AboutMe": "About Me",
+        "PreviousGames": "Previous Games",
+        "Friends": "Friends",
+        "Edit": "Edit",
+        "User": "User",
+        "Address": "Address",
+        "Favorites": "Favorites"
     }
-   
 }

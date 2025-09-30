@@ -136,5 +136,15 @@
         "confirmPasswordMax": "La contraseña debe tener menos de 30 caracteres",
 
         "passwordMatch": "Las contraseñas no coinciden"
+    },
+
+    "UserPage": {
+        "AboutMe": "Sobre Mí",
+        "PreviousGames": "Juegos Anteriores",
+        "Friends": "Amigos",
+        "Edit": "Editar",
+        "User": "Usuario",
+        "Address": "Dirección",
+        "Favorites": "Favoritos"
     }
 }
