@@ -9,10 +9,6 @@ import {
   HelpCircle, 
   LogOut, 
   CreditCard, 
-  Stethoscope, 
-  Scale, 
-  Activity, 
-  Heart,
   MoreHorizontal,
   Sliders
 } from "lucide-react";
@@ -43,7 +39,6 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user, logout, isOpen, setIs
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu className="h-5 w-5" />
-          <span className="sr-only">{t("ToggleMenu")}</span>
         </Button>
       </SheetTrigger>
 
@@ -63,37 +58,8 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user, logout, isOpen, setIs
               </div>
             </div>
 
-            {/* Appointment pages */}
-            <div className="space-y-2 mb-0">
-              <div className="flex items-center gap-2">
-                <Stethoscope className="h-4 w-4 text-muted-foreground" />
-                <p className="text-xs font-medium text-muted-foreground">{t("Appointments")}</p>
-              </div>
-              
-              <Button variant="ghost" asChild className="justify-start pl-4">
-                <Link href="/appointment/obesity" onClick={() => setIsOpen(false)}>
-                  <Scale className="mr-2 h-4 w-4" />
-                  {t("Obesity")}
-                </Link>
-              </Button>
-               
-              <Button variant="ghost" asChild className="justify-start pl-4">
-                <Link href="/appointment/diabetes" onClick={() => setIsOpen(false)}>
-                  <Activity className="mr-2 h-4 w-4" />
-                  {t("Diabetes")}
-                </Link>
-              </Button>
-              <Button variant="ghost" asChild className="justify-start pl-4">
-                <Link href="/appointment/cardiology" onClick={() => setIsOpen(false)}>
-                  <Heart className="mr-2 h-4 w-4" />
-                  {t("Cardiology")}
-                </Link>
-              </Button>
-              
-            </div>
-
             {/* Other pages */}
-            <div className="border-t pt-4 space-y-2 mb-0">
+            <div className="space-y-2 mb-0">
               <div className="flex items-center gap-2">
                 <MoreHorizontal className="h-4 w-4 text-muted-foreground" />
                 <p className="text-xs font-medium text-muted-foreground">{t("Others")}</p>
