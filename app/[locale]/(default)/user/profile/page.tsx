@@ -8,19 +8,23 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 import useSession from "@/hooks/useSession";
+import { userMock } from "@/lib/mock/user";
 
 import Sidebar from "@/components/default/sidebar/Sidebar";
 import ProductCard from "@/components/cards/ProductCard";
 
 const ProfilePage = () => {
-  const { user } = useSession();
-  
+  // const { user } = useSession();
+  const user = userMock; //! MOCKUP DATA
+
   const t = useTranslations("ProfilePage");
   const [activeTab, setActiveTab] = useState("about");
 
   const favorites = Array.from({ length: 6 }, (_, i) => ({
     id: `favorite-${i + 1}`,
   }));
+
+  const countFavorites = favorites.length;
 
   return (
     <div className="flex flex-col lg:flex-row gap-6 w-full h-full overflow-auto scrollbar pb-8">
@@ -55,7 +59,7 @@ const ProfilePage = () => {
 
             {/* User Info */}
             <div className="flex flex-col gap-2">
-              <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
                 {user.name}
               </h3>
               <p className="text-gray-600 dark:text-gray-400">{user.email}</p>
@@ -68,7 +72,7 @@ const ProfilePage = () => {
           <div className="flex items-center gap-2 mb-6">
             <Heart className="h-6 w-6 text-gray-700 dark:text-gray-300" />
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
-              {t("Favorites")}
+              {t("Favorites")} ({countFavorites})
             </h2>
           </div>
 
