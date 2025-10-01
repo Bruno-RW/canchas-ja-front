@@ -193,8 +193,7 @@ const Sidebar: React.FC<SidebarProps> = ({
               <CollapsibleContent className="mt-1 space-y-1">
                 {group.items.map((item) => {
                   const Icon = item.icon;
-                  const isActive =
-                    activeTab === item.id || pathname === item.href;
+                  const isActive = activeTab === item.id || pathname.endsWith(item.href);
 
                   return (
                     <Link
