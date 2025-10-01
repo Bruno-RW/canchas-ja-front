@@ -27,8 +27,8 @@ import LanguageSVG from "@/public/icons/action/language.svg";
 
 import type { User } from "@/lib/types/user";
 
-import ThemeToggle from "@/components/navbar/components/ThemeToggle";
-import LanguageDropdown from "@/components/navbar/components/LanguageDropdown";
+import ThemeToggle from "@/components/default/navbar/components/ThemeToggle";
+import LanguageDropdown from "@/components/default/navbar/components/LanguageDropdown";
 
 interface UserMenuProps {
   user: User;
@@ -87,7 +87,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user, logout }) => {
             asChild
             className="flex items-center hover:cursor-pointer"
           >
-            <Link href="/profile">
+            <Link href="/user/profile">
               <UserIcon className="mr-2 h-4 w-4" />
               <span>{t("Profile")}</span>
             </Link>
@@ -96,7 +96,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user, logout }) => {
             asChild
             className="flex items-center hover:cursor-pointer"
           >
-            <Link href="/settings">
+            <Link href="/user/settings">
               <Settings className="mr-2 h-4 w-4" />
               <span>{t("Settings")}</span>
             </Link>
@@ -105,7 +105,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ user, logout }) => {
             asChild
             className="flex items-center hover:cursor-pointer"
           >
-            <Link href="/billing">
+            <Link href="/user/plans">
               <CreditCard className="mr-2 h-4 w-4" />
               <span>{t("Plans")}</span>
             </Link>

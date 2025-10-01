@@ -1,7 +1,7 @@
 "use client";
 
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/default/navbar/Navbar";
+import Footer from "@/components/default/footer/Footer";
 
 const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (

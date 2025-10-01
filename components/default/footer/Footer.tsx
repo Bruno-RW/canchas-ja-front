@@ -1,7 +1,7 @@
 import Separator from "@/components/ui/custom/Separator";
 
-import Columns from "@/components/footer/components/Columns";
-import Kicker from "@/components/footer/components/Kicker";
+import Columns from "@/components/default/footer/components/Columns";
+import Kicker from "@/components/default/footer/components/Kicker";
 
 const Footer = () => {
   return (

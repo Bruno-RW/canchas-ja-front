@@ -37,6 +37,42 @@
         "Signin": "Sign Up"
     },
 
+    "Sidebar": {
+        "Account": {
+            "Title": "Account",
+
+            "Profile": "Profile",
+            "Settings": "Settings",
+            "Security": "Security",
+            "Privacy": "Privacy",
+            "Plans": "Plans"
+        },
+
+        "Activity": {
+            "Title": "Activity",
+
+            "Games": "Games",
+            "Favorites": "Favorites",
+            "Reviews": "Reviews",
+            "Bookings": "Bookings"
+        },
+
+        "Social": {
+            "Title": "Social",
+
+            "Friends": "Friends",
+            "Messages": "Messages",
+            "Notifications": "Notifications"
+        },
+
+        "Support": {
+            "Title": "Support",
+
+            "HelpCenter": "Help center",
+            "Contact": "Contact"
+        }
+    },
+
     "Footer": {
         "Columns": {
             "Support": {
@@ -139,13 +175,10 @@
         "passwordMatch": "Passwords doesn't match"
     },
 
-    "UserPage": {
+    "ProfilePage": {
         "AboutMe": "About Me",
         "PreviousGames": "Previous Games",
-        "Friends": "Friends",
         "Edit": "Edit",
-        "User": "User",
-        "Address": "Address",
         "Favorites": "Favorites"
     }
 }

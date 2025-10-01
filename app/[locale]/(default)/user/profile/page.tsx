@@ -7,11 +7,15 @@ import { Heart } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
+import useSession from "@/hooks/useSession";
+
 import Sidebar from "@/components/default/sidebar/Sidebar";
 import ProductCard from "@/components/cards/ProductCard";
 
-const UserPage = () => {
-  const t = useTranslations("UserPage");
+const ProfilePage = () => {
+  const { user } = useSession();
+  
+  const t = useTranslations("ProfilePage");
   const [activeTab, setActiveTab] = useState("about");
 
   const favorites = Array.from({ length: 6 }, (_, i) => ({
@@ -52,9 +56,9 @@ const UserPage = () => {
             {/* User Info */}
             <div className="flex flex-col gap-2">
               <h3 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">
-                {t("User")}
+                {user.name}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">{t("Address")}</p>
+              <p className="text-gray-600 dark:text-gray-400">{user.email}</p>
             </div>
           </div>
         </section>
@@ -79,4 +83,4 @@ const UserPage = () => {
   );
 };
 
-export default UserPage;
+export default ProfilePage;

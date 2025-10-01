@@ -24,8 +24,8 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils/utils";
 import { User } from "@/lib/types/user";
 
-import ThemeToggle from "@/components/navbar/components/ThemeToggle";
-import LanguageDropdown from "@/components/navbar/components/LanguageDropdown";
+import ThemeToggle from "@/components/default/navbar/components/ThemeToggle";
+import LanguageDropdown from "@/components/default/navbar/components/LanguageDropdown";
 
 interface MobileNavbarProps {
   user: User;
@@ -100,21 +100,21 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user, logout, isOpen, setIs
               </div>
 
               <Button variant="ghost" asChild className="justify-start">
-                <Link href="/profile" onClick={() => setIsOpen(false)}>
+                <Link href="/user/profile" onClick={() => setIsOpen(false)}>
                   <UserIcon className="mr-2 h-4 w-4" />
                   {t("Profile")}
                 </Link>
               </Button>
 
               <Button variant="ghost" asChild className="justify-start">
-                <Link href="/settings" onClick={() => setIsOpen(false)}>
+                <Link href="/user/settings" onClick={() => setIsOpen(false)}>
                   <Settings className="mr-2 h-4 w-4" />
                   {t("Settings")}
                 </Link>
               </Button>
 
               <Button variant="ghost" asChild className="justify-start">
-                <Link href="/billing" onClick={() => setIsOpen(false)}>
+                <Link href="/user/plans" onClick={() => setIsOpen(false)}>
                   <CreditCard className="mr-2 h-4 w-4" />
                   {t("Plans")}
                 </Link>

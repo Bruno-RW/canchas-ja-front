@@ -4,8 +4,8 @@ import { useState } from "react";
 
 import useSession from "@/hooks/useSession";
 
-import DesktopNavbar from "@/components/navbar/desktop/DesktopNavbar";
-import MobileNavbar from "@/components/navbar/mobile/MobileNavbar";
+import DesktopNavbar from "@/components/default/navbar/desktop/DesktopNavbar";
+import MobileNavbar from "@/components/default/navbar/mobile/MobileNavbar";
 
 import { userMock } from "@/lib/mock/user"; //! MOCKUP DATA
 

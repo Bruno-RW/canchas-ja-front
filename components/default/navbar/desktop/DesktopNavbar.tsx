@@ -8,9 +8,9 @@ import { Input } from "@/components/ui/input";
 
 import type { User } from "@/lib/types/user";
 
-import Logo from "@/components/navbar/components/Logo";
-import UserMenu from "@/components/navbar/desktop/components/UserMenu";
-import GuestMenu from "@/components/navbar/desktop/components/GuestMenu";
+import Logo from "@/components/default/navbar/components/Logo";
+import UserMenu from "@/components/default/navbar/desktop/components/UserMenu";
+import GuestMenu from "@/components/default/navbar/desktop/components/GuestMenu";
 
 interface DesktopNavbarProps {
   user: User;
