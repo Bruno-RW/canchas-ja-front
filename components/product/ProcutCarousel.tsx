@@ -36,8 +36,8 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
 
           {/* Navigation Buttons */}
           <div className="flex items-center gap-2">
-            <CarouselPrevious className="static h-10 w-10 rounded-full border border-border bg-background hover:bg-accent disabled:opacity-50 translate-x-0 translate-y-0" />
-            <CarouselNext className="static h-10 w-10 rounded-full border border-border bg-background hover:bg-accent disabled:opacity-50 translate-x-0 translate-y-0" />
+            <CarouselPrevious className="static h-10 w-10 rounded-full border border-border bg-background hover:cursor-pointer hover:bg-accent disabled:opacity-50 translate-x-0 translate-y-0" />
+            <CarouselNext className="static h-10 w-10 rounded-full border border-border bg-background hover:cursor-pointer hover:bg-accent disabled:opacity-50 translate-x-0 translate-y-0" />
           </div>
         </div>
 
