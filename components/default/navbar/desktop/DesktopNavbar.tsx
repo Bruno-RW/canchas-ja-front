@@ -31,7 +31,7 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ user, logout }) => {
         <Input
           type="text"
           placeholder={t("SearchPlaceholder")}
-          className="flex-1 border-0 rounded-full p-5 text-sm focus:outline-none focus:ring-0 bg-transparent placeholder:text-gray-500"
+          className="flex-1 border-0 shadow-none rounded-full p-5 text-sm focus:outline-none focus:ring-0 bg-transparent placeholder:text-gray-500"
         />
 
         <Button
