@@ -3,7 +3,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center space-x-2">
-      <svg viewBox="0 0 24 24" fill="none" className="h-8 w-8 text-red-500">
+      <svg viewBox="0 0 24 24" fill="none" className="h-8 w-8 text-brand-primary">
         <path
           d="M12 2L2 7L12 12L22 7L12 2Z"
           stroke="currentColor"
@@ -26,7 +26,7 @@ const Logo = () => {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="font-bold text-xl text-red-500">canchas.ja</span>
+      <span className="font-bold text-xl text-brand-primary">Canchas Já</span>
     </Link>
   );
 };

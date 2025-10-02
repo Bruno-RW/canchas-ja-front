@@ -1,4 +1,4 @@
-export const userMock = {
+export const mockUser = {
     name: "Bruno Wunsch",
     email: "bruno_wunsch@hotmail.com",
     type: "C", // C = Client | H = Host

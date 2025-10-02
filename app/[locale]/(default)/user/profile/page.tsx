@@ -12,7 +12,7 @@ import useSession from "@/hooks/useSession";
 import { mockProducts } from "@/lib/mock/product";
 
 import Sidebar from "@/components/default/sidebar/Sidebar";
-import ProductCard from "@/components/cards/ProductCard";
+import ProductCard from "@/components/product/ProductCard";
 
 const ProfilePage = () => {
   const { user } = useSession();

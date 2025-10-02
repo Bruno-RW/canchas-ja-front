@@ -31,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     currency,
   } = product;
 
-  const t = useTranslations("Component.Cards.ProductCard");
+  const t = useTranslations("Component.Product.ProductCard");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
 

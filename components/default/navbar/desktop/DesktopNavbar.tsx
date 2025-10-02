@@ -36,7 +36,7 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ user, logout }) => {
 
         <Button
           size="sm"
-          className="rounded-full h-7 w-7 bg-red-500 hover:cursor-pointer hover:bg-red-600 text-white border-0 mr-2"
+          className="rounded-full h-7 w-7 bg-brand-primary hover:cursor-pointer hover:bg-brand-primary-hover text-white border-0 mr-2"
           children={<Search className="h-1 w-1" />}
         />
       </div>
