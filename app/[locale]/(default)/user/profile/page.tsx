@@ -2,22 +2,22 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Heart } from "lucide-react";
+import { Heart, Pencil } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 import useSession from "@/hooks/useSession";
-import { userMock } from "@/lib/mock/user";
+
+import { mockProducts } from "@/lib/mock/product";
 
 import Sidebar from "@/components/default/sidebar/Sidebar";
 import ProductCard from "@/components/cards/ProductCard";
 
 const ProfilePage = () => {
-  // const { user } = useSession();
-  const user = userMock; //! MOCKUP DATA
+  const { user } = useSession();
 
-  const t = useTranslations("ProfilePage");
+  const t = useTranslations("Page.User.Profile.ProfilePage");
   const [activeTab, setActiveTab] = useState("about");
 
   const favorites = Array.from({ length: 6 }, (_, i) => ({
@@ -26,18 +26,24 @@ const ProfilePage = () => {
 
   const countFavorites = favorites.length;
 
+  const handleFavoriteToggle = (id: string, isFavorite: boolean) => {
+    console.log("[v0] Product", id, "favorite status:", isFavorite)
+  };
+
   return (
-    <div className="flex flex-col lg:flex-row gap-6 w-full h-full overflow-auto scrollbar pb-8">
+    <div className="flex flex-col lg:flex-row gap-6 w-full h-full pb-8">
       <Sidebar activeTab={activeTab} onTabChange={setActiveTab} />
 
-      <div className="flex-1 flex flex-col gap-8">
+      <div className="flex-1 flex flex-col gap-8 pt-2">
         {/* About Me */}
         <section>
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
               {t("AboutMe")}
             </h2>
-            <Button variant="outline" size="sm">
+
+            <Button variant="outline" size="sm" className="hover:cursor-pointer">
+              <Pencil />
               {t("Edit")}
             </Button>
           </div>
@@ -77,8 +83,12 @@ const ProfilePage = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {favorites.map((favorite) => (
-              <ProductCard key={favorite.id} id={favorite.id} />
+            {mockProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onFavoriteToggle={handleFavoriteToggle}
+              />
             ))}
           </div>
         </section>

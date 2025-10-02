@@ -36,7 +36,7 @@ interface UserMenuProps {
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({ user, logout }) => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("Component.Default.Navbar");
 
   return (
     <>

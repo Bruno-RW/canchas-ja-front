@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const LanguageDropdown = () => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("Component.Default.Navbar");
 
   const router = useRouter();
   const pathname = usePathname();

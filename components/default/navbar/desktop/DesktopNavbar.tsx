@@ -18,7 +18,7 @@ interface DesktopNavbarProps {
 }
 
 const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ user, logout }) => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("Component.Default.Navbar");
 
   return (
     <>

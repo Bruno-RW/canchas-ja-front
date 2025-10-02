@@ -21,9 +21,9 @@ import { Input } from "@/components/ui/input";
 import Button from "@/components/ui/custom/Button";
 
 const LoginForm = () => {
-  const formText = useTranslations("LoginForm");
-  const toastText = useTranslations("Toast");
-  const schemaText = useTranslations("LoginFormSchema");
+  const toastText = useTranslations("Global.Toast");
+  const formText = useTranslations("Page.Login.LoginForm");
+  const schemaText = useTranslations("Page.Login.LoginFormSchema");
   
   const { login } = useSession();
   const router = useRouter();

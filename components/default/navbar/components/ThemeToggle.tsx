@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/tooltip";
 
 const ThemeToggle = () => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("Component.Default.Navbar");
   const { theme, setTheme } = useTheme();
 
   return (

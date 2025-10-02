@@ -32,7 +32,7 @@ interface MobileNavbarProps {
 };
 
 const MobileNavbar: React.FC<MobileNavbarProps> = ({ user, logout, isOpen, setIsOpen }) => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("Component.Default.Navbar");
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>

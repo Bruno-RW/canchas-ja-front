@@ -38,7 +38,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   activeTab = "about",
   onTabChange,
 }) => {
-  const t = useTranslations("Sidebar");
+  const t = useTranslations("Component.Default.Sidebar");
   const pathname = usePathname();
 
   const [openSections, setOpenSections] = useState<string[]>([
