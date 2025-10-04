@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { Product } from "@/lib/types/product";
 import { cn } from "@/lib/utils/utils";
+import Link from "next/link";
 
 interface ProductCardProps {
   product: Product
@@ -46,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   const discountedPrice = discount ? price * (1 - discount / 100) : price;
 
   return (
-    <div className={cn("group cursor-pointer", className)}>
+    <Link href={`/product/${id}`} className={cn("group cursor-pointer", className)}>
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-700 mb-3">
         
@@ -161,7 +162,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
