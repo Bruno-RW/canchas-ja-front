@@ -193,9 +193,11 @@
     },
 
     "Home": {
-      "SpecialDiscounts": "Descuentos especiales",
-      "BestRated": "Canchas mejor valoradas",
-      "NearYou": "Cerca de ti"
+      "HomePage": {
+        "SpecialDiscounts": "Descuentos especiales",
+        "BestRated": "Canchas mejor valoradas",
+        "NearYou": "Cerca de ti"
+      }
     },
 
     "User": {
