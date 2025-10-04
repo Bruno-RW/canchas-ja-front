@@ -3,7 +3,8 @@
     "Toast": {
       "SendError": "Error al enviar el formulario",
       "RequestError": "Error de solicitud",
-      "InternalError": "Error interno"
+      "InternalError": "Error interno",
+      "UnexpectedError": "Error inesperado"
     }
   },
 
