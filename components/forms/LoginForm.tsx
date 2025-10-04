@@ -1,17 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import useSession from "@/hooks/useSession";
 import useToastStyle from "@/hooks/useToastStyle";
-import { cn, getInitials } from "@/lib/utils/utils";
+import { cn } from "@/lib/utils/utils";
 import { LOGIN_API_URL } from "@/lib/routes/backend";
 import { loginFormData } from "@/lib/types/forms";
 import { getLoginFormSchema } from "@/lib/schemas/auth";
@@ -26,7 +25,6 @@ const LoginForm = () => {
   const schemaText = useTranslations("Page.Login.LoginFormSchema");
   
   const { login } = useSession();
-  const router = useRouter();
   const { toastStyle } = useToastStyle();
   const [ isLoading, setIsLoading ] = useState(false);
 
@@ -41,7 +39,13 @@ const LoginForm = () => {
     },
   })
 
-  const onSubmit = async (data: loginFormData) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    
+    const formData = new FormData(event.currentTarget);
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
+
     let toastMessage = "";
     let isError = false;
 
@@ -50,8 +54,8 @@ const LoginForm = () => {
 
       const loginPost = await axios.post(
         LOGIN_API_URL,
-        { email: data.email, password: data.password },
-        { timeout: 5000 } // 5 seconds timeout
+        { email, password },
+        { timeout: 3000 }
       );
 
       if (!loginPost) {
@@ -66,21 +70,26 @@ const LoginForm = () => {
         return;
       }
 
-      const loginData = loginPost.data;
+      const payload = loginPost.data?.user ?? loginPost.data;
 
       login({
-        name: loginData.name,
-        email: loginData.email,
-        type: loginData.type,
-        initials: getInitials(loginData.name),
+        name: payload.name,
+        email: payload.email,
+        type: payload.type,
+        initials: payload.initials,
         isLogin: true,
       });
-      
-      router.replace("/");
 
-    } catch (error) {
-      toastMessage = `${toastText("InternalError")}: ${error}`;
-      isError = true;
+    } catch (error: unknown) {
+      if (error instanceof AxiosError) {
+        toastMessage = `${toastText("InternalError")}: ${error.response?.data.detail}`;
+        isError = true;
+      }
+
+      else {
+        toastMessage = `${toastText("UnexpectedError")}: ${error}`;
+        isError = true;
+      }
       
     } finally {
       setIsLoading(false);
@@ -90,7 +99,7 @@ const LoginForm = () => {
 
   return (
     <Form {...form}>
-      <form className="flex flex-col w-full gap-y-5 py-3" onSubmit={form.handleSubmit(onSubmit)}>
+      <form className="flex flex-col w-full gap-y-5 py-3" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-y-3">
           <FormField
             control={form.control}
@@ -136,7 +145,8 @@ const LoginForm = () => {
           />
         </div>
 
-        <Button className={cn(isLoading && "bg-blue-600/70 dark:bg-blue-500/40")}
+        <Button 
+          className={cn("bg-brand-primary dark:bg-brand-primary-hover", isLoading && "bg-brand-primary-hover dark:bg-brand-primary hover:cursor-default")}
           type="submit"
           variant="blue"
           isLoading={isLoading}
