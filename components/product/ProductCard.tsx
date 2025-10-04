@@ -52,7 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-700 mb-3">
         
         {/* Image */}
-        {images.length > 0 ? (
+        {/* {images.length > 0 ? (
           <Image
             src={images[currentImageIndex]}
             alt={location}
@@ -62,7 +62,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
           />
         ) : (
           <div className="w-full h-full bg-gray-300 dark:bg-gray-600" />
-        )}
+        )} */}
+        <div className="w-full h-full bg-gray-300 dark:bg-gray-600" />
 
         {/* Discount Badge */}
         {discount && (
