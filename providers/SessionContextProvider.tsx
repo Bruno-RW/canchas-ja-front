@@ -12,6 +12,7 @@ const SessionContextProvider: React.FC<SessionContextProviderProps> = ({ childre
   const router = useRouter();
 
   const [ user, setUser ] = useState<User>({
+    id: "",
     name: "",
     email: "",
     type: "C", // Default type as Client
@@ -20,7 +21,8 @@ const SessionContextProvider: React.FC<SessionContextProviderProps> = ({ childre
   });
 
   const login = (user: User) => {
-      setUser({
+    setUser({
+      id: user.id,
       name: user.name,
       email: user.email,
       type: user.type || "C", // Default to Client if type is not provided
@@ -32,6 +34,7 @@ const SessionContextProvider: React.FC<SessionContextProviderProps> = ({ childre
 
   const logout = () => {
     setUser({
+      id: "",
       name: "",
       email: "",
       type: "C", // Reset to default Client type

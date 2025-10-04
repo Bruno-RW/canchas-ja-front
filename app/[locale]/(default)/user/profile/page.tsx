@@ -1,33 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Heart, Pencil } from "lucide-react";
+import axios from "axios";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
-import useSession from "@/hooks/useSession";
+import { Product } from "@/lib/types/product";
+import { USER_API_URL } from "@/lib/routes/backend";
 
-import { mockProducts } from "@/lib/mock/product";
+import useSession from "@/hooks/useSession";
 
 import Sidebar from "@/components/default/sidebar/Sidebar";
 import ProductCard from "@/components/product/ProductCard";
 
 const ProfilePage = () => {
   const { user } = useSession();
+  const router = useRouter();
 
   const t = useTranslations("Page.User.Profile.ProfilePage");
   const [activeTab, setActiveTab] = useState("about");
+  const [favorites, setFavorites] = useState<Product[]>([]);
 
-  const favorites = Array.from({ length: 6 }, (_, i) => ({
-    id: `favorite-${i + 1}`,
-  }));
+  useEffect(() => {
+    if (!user.isLogin) router.replace("/");
+  }, [user.isLogin]);
+
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      try {
+        const response = await axios.get(`${USER_API_URL}/${user.id}/favorite`);
+        setFavorites(response.data);
+
+      } catch (error) {
+        console.error("Failed to fetch favorites:", error);
+      }
+    };
+
+    fetchFavorites();
+  }, []);
 
   const countFavorites = favorites.length;
 
   const handleFavoriteToggle = (id: string, isFavorite: boolean) => {
-    console.log("[v0] Product", id, "favorite status:", isFavorite)
+    console.log("[v0] Product", id, "favorite status:", isFavorite);
   };
 
   return (
@@ -51,7 +70,6 @@ const ProfilePage = () => {
           <div className="flex flex-col md:flex-row gap-6 items-start">
             {/* Avatar */}
             <Avatar className="h-48 w-48 flex-shrink-0 bg-gray-300 dark:bg-gray-600">
-              <AvatarImage src="/placeholder.svg" alt="User avatar" />
               <AvatarFallback className="text-6xl text-gray-400 dark:text-gray-500">
                 <svg
                   className="h-32 w-32"
@@ -83,7 +101,7 @@ const ProfilePage = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {mockProducts.map((product) => (
+            {favorites.map((product) => (
               <ProductCard
                 key={product.id}
                 product={product}

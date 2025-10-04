@@ -73,6 +73,7 @@ const LoginForm = () => {
       const payload = loginPost.data?.user ?? loginPost.data;
 
       login({
+        id: payload.id,
         name: payload.name,
         email: payload.email,
         type: payload.type,

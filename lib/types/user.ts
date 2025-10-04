@@ -6,6 +6,7 @@ export const UserTypeEnum = {
 } as const;
 
 export type User = {
+  id: number;
   name: string;
   email: string;
   type: UserType;

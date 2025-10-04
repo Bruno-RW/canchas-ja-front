@@ -1,31 +1,51 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import axios from "axios";
 
-import useSession from "@/hooks/useSession";
+import { 
+  PRODUCT_BEST_RATED_API_URL,
+  PRODUCT_NEAR_YOU_API_URL,
+  PRODUCT_SPECIAL_DISCOUNT_API_URL
+} from "@/lib/routes/backend";
 
-import { mockUser } from "@/lib/mock/user"; //! MOCKUP DATA
-import { mockProducts } from "@/lib/mock/product"; //! MOCKUP DATA
+import { Product } from "@/lib/types/product";
+
 import ProductCarousel from "@/components/product/ProcutCarousel";
 
 const HomePage = () => {
-  const { user, login } = useSession();
-  const router = useRouter();
-  const t = useTranslations("Page.Home");
+  const t = useTranslations("Page.Home.HomePage");
+
+  const [specialDiscounts, setSpecialDiscounts] = useState<Product[]>([]);
+  const [bestRated, setBestRated] = useState<Product[]>([]);
+  const [nearYou, setNearYou] = useState<Product[]>([]);
 
   useEffect(() => {
-    // if (!user.isLogin) router.replace("/login");
-    if (!user.isLogin) login(mockUser);
+    const fetchProducts = async () => {
+      try {
+        const resSpecial = await axios.get(PRODUCT_SPECIAL_DISCOUNT_API_URL);
+        setSpecialDiscounts(resSpecial.data);
 
-  }, [user.isLogin]);
+        const resBest = await axios.get(PRODUCT_BEST_RATED_API_URL);
+        setBestRated(resBest.data);
+
+        const resNear = await axios.get(PRODUCT_NEAR_YOU_API_URL);
+        setNearYou(resNear.data);
+
+      } catch (error) {
+        console.error("Failed to fetch products:", error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   return (
     <>
-      <ProductCarousel title={t("SpecialDiscounts")} products={mockProducts} />
-      <ProductCarousel title={t("BestRated")} products={mockProducts} />
-      <ProductCarousel title={t("NearYou")} products={mockProducts} />
+      <ProductCarousel title={t("SpecialDiscounts")} products={specialDiscounts} />
+      <ProductCarousel title={t("BestRated")} products={bestRated} />
+      { nearYou.length > 0 && <ProductCarousel title={t("NearYou")} products={nearYou} /> }
     </>
   );
 };
