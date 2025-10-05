@@ -12,10 +12,13 @@ import {
 
 import { Product } from "@/lib/types/product";
 
+import useSession from "@/hooks/useSession";
+
 import ProductCarousel from "@/components/product/ProcutCarousel";
 
 const HomePage = () => {
   const t = useTranslations("Page.Home.HomePage");
+  const { user } = useSession();
 
   const [specialDiscounts, setSpecialDiscounts] = useState<Product[]>([]);
   const [bestRated, setBestRated] = useState<Product[]>([]);
@@ -30,7 +33,7 @@ const HomePage = () => {
         const resBest = await axios.get(PRODUCT_BEST_RATED_API_URL);
         setBestRated(resBest.data);
 
-        const resNear = await axios.get(PRODUCT_NEAR_YOU_API_URL);
+        const resNear = await axios.get(`${PRODUCT_NEAR_YOU_API_URL}/${user.id}`);
         setNearYou(resNear.data);
 
       } catch (error) {

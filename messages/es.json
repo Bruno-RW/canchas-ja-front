@@ -209,6 +209,24 @@
           "Favorites": "Favoritos"
         }
       }
+    },
+
+    "Product": {
+      "ProductClientPage": {
+        "Share": "Compartir",
+        "Save": "Guardar",
+
+        "MostWanted": "Más buscado por los jugadores",
+        "Reviews": "Reseñas",
+        
+        "CheckIn": "Entrada",
+        "CheckOut": "Salida",
+        "BookNow": "Reservar Ahora",
+
+        "SpecialDiscount": "Descuento Especial",
+        
+        "DiscountDuration": "por {x} horas"
+      }
     }
   }
 }

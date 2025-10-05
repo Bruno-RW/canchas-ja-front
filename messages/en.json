@@ -213,19 +213,20 @@
     },
 
     "Product": {
-      "ProductPage": {
+      "ProductClientPage": {
         "Share": "Share",
         "Save": "Save",
+
         "MostWanted": "Most wanted by players",
-        "SpecialDiscounts": "Special Discounts",
         "Reviews": "Reviews",
-        "Per4Hours": "for 4 hours",
+        
         "CheckIn": "Check-in",
         "CheckOut": "Check-out",
         "BookNow": "Book Now",
-        "Title": "Cancha Do Seu Jorje",
-        "LocationTitle": "Cancha do seu Jorje, in {location}",
-        "Amenities": "With copa, 2 bathrooms, parking"
+
+        "SpecialDiscounts": "Desconto especial",
+        
+        "DiscountDuration": "for {x} hours"
       }
     }
   }
