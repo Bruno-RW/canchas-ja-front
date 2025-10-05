@@ -220,13 +220,12 @@
         "MostWanted": "Most wanted by players",
         "Reviews": "Reviews",
         
+        "SpecialDiscount": "Desconto especial",
+        "DiscountDuration": "for {x} hours",
+
         "CheckIn": "Check-in",
         "CheckOut": "Check-out",
-        "BookNow": "Book Now",
-
-        "SpecialDiscounts": "Desconto especial",
-        
-        "DiscountDuration": "for {x} hours"
+        "BookNow": "Book Now"
       }
     }
   }

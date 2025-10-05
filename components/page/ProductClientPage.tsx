@@ -48,11 +48,11 @@ const ProductClientPage: React.FC<ProductClientPageProps> = ({ productId }) => {
         <h1 className="text-2xl font-semibold">{product?.address}</h1>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="gap-2">
+          <Button variant="ghost" size="sm" className="gap-2 hover:cursor-pointer">
             <Share2 className="w-4 h-4" />
             {t("Share")}
           </Button>
-          <Button variant="ghost" size="sm" className="gap-2">
+          <Button variant="ghost" size="sm" className="gap-2 hover:cursor-pointer">
             <Heart className="w-4 h-4" />
             {t("Save")}
           </Button>
@@ -204,7 +204,7 @@ const ProductClientPage: React.FC<ProductClientPageProps> = ({ productId }) => {
             </div>
 
             {/* Book Button */}
-            <Button className="w-full" size="lg">
+            <Button className="w-full hover:cursor-pointer" size="lg">
               {t("BookNow")}
             </Button>
           </div>

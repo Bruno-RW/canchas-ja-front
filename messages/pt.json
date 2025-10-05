@@ -220,13 +220,12 @@
         "MostWanted": "Mais procurada pelos jogadores",
         "Reviews": "Avaliações",
         
+        "SpecialDiscount": "Desconto Especial",
+        "DiscountDuration": "por {x} horas",
+
         "CheckIn": "Entrada",
         "CheckOut": "Saída",
-        "BookNow": "Reservar Agora",
-
-        "SpecialDiscount": "Desconto Especial",
-        
-        "DiscountDuration": "por {x} horas"
+        "BookNow": "Reservar Agora"
       }
     }
   }

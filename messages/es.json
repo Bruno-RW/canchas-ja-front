@@ -219,13 +219,12 @@
         "MostWanted": "Más buscado por los jugadores",
         "Reviews": "Reseñas",
         
+        "SpecialDiscount": "Descuento Especial",
+        "DiscountDuration": "por {x} horas",
+
         "CheckIn": "Entrada",
         "CheckOut": "Salida",
-        "BookNow": "Reservar Ahora",
-
-        "SpecialDiscount": "Descuento Especial",
-        
-        "DiscountDuration": "por {x} horas"
+        "BookNow": "Reservar Ahora"
       }
     }
   }
