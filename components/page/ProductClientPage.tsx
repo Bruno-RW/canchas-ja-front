@@ -140,7 +140,7 @@ const ProductClientPage: React.FC<ProductClientPageProps> = ({ productId }) => {
               </div>
             </div>
 
-            <Separator className="w-4/5 self-center align-middle items-center text-center snap-center center" />
+            <Separator className="w-11/12 self-center align-middle items-center text-center snap-center center" />
 
             <div className="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-line">
               <p>{product?.description}</p>
